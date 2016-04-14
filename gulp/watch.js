@@ -1,5 +1,8 @@
 var gulp = require('gulp');
+var watch = require('gulp-sane-watch');
 
 gulp.task('listen', function () {
-  gulp.watch('node_modules/greenaddress-webfiles/', ['webfiles']);
+  watch('node_modules/greenaddress-webfiles/dist/**/*', {debounce: 1000}, function () {
+    gulp.start('webfiles')
+  });
 });

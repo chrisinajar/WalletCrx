@@ -19,7 +19,8 @@
   },
   "homepage": "https://github.com/chrisinajar/WalletCrx#readme",
   "dependencies": {
-    "greenaddress-webfiles": "github:chrisinajar/greenaddresswebfiles#2a08a91179ba1816fe073ad9d9975f918fb6eb3d"
+    "greenaddress-webfiles": "github:chrisinajar/greenaddresswebfiles#7a3641483bec52cbb6cca923f51c574ac67b11b9",
+    "gulp-sane-watch": "^1.1.2"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
