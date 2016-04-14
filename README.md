@@ -32,8 +32,10 @@ In [package.json](./package.json) there is a line which looks something like thi
 
 ... update the hash value in that line to point to the version (or tag) you wish to build and then run
 
-`npm i`
-`npm run build`
+```bash
+npm install
+npm run build
+```
 
 Rejoice!
 
@@ -49,6 +51,7 @@ This repository uses `npm` to fetch the web assets used. You can use `npm link` 
 * Within the WalletCrx directory
   * `npm link greenaddress-webfiles`
   * `npm run watch`
+  * To revert back to the github version, simply run `npm install` again
 
 Modify files and rejoice.
 
