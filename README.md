@@ -20,9 +20,22 @@ For REGTEST run ./prepare.sh regtest
 
 To create a Chrome store zip for mainnet and testnet run ./makePackages.sh
 
-## Contributing
+# Contributing
 
 This repository only contains the files exclusive to the Chrome extension and the build system for copying the correct assets out of [GreenAddressWebFiles](https://github.com/greenaddress/GreenAddressWebFiles). In almost every case you'll want to make your changes in that repository and not this one.
+
+## Updating GreenAddressWebFiles
+
+In [package.json](./package.json) there is a line which looks something like this...
+
+`"greenaddress-webfiles": "github:greenaddress/greenaddresswebfiles#deadbeef123thisisaversionhash"`
+
+... update the hash value in that line to point to the version (or tag) you wish to build and then run
+
+`npm i`
+`npm run build`
+
+Rejoice!
 
 #### Working With Live GreenAddressWebFiles
 This repository uses `npm` to fetch the web assets used. You can use `npm link` to instead point your WalletCrx working copy at a local version of `GreenAddressWebFiles`.
