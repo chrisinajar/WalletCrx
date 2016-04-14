@@ -1,0 +1,22 @@
+{
+  "name": "greenaddress-chrome-extension",
+  "version": "1.0.0",
+  "description": "GreenAddress open source client https://greenaddress.it/",
+  "main": "static/js/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisinajar/WalletCrx.git"
+  },
+  "author": "",
+  "license": "LGPL-2.1",
+  "bugs": {
+    "url": "https://github.com/chrisinajar/WalletCrx/issues"
+  },
+  "homepage": "https://github.com/chrisinajar/WalletCrx#readme",
+  "dependencies": {
+    "greenaddress-webfiles": "github:chrisinajar/greenaddresswebfiles#2a08a91179ba1816fe073ad9d9975f918fb6eb3d"
+  }
+}
