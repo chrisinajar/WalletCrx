@@ -4,7 +4,9 @@
   "description": "GreenAddress open source client https://greenaddress.it/",
   "main": "static/js/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/gulp build",
+    "watch": "./node_modules/.bin/gulp"
   },
   "repository": {
     "type": "git",
@@ -18,5 +20,9 @@
   "homepage": "https://github.com/chrisinajar/WalletCrx#readme",
   "dependencies": {
     "greenaddress-webfiles": "github:chrisinajar/greenaddresswebfiles#2a08a91179ba1816fe073ad9d9975f918fb6eb3d"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2"
   }
 }
